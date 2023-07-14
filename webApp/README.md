@@ -12,11 +12,18 @@ if it give you a version, It was downloaded and installed properly.
 
 - You can also download all the dependancies of the project by doing `npm i`
 
+You can test Angular CLI by using `ng -v`
+If you encounter an Error while being on Windows and PowerShell, do the following:
+- Set the execution policy as RemoteSigned (`Set-ExecutionPolicy RemoteSigned`)
+- Set the path to the bin Folder of angular cli in your Rnviroment Variables of Windows (`PATH_TO_YOUR_NPM_FOLDER\npm\node_modules\@angular\cli\bin`). Your npm Folder should already have been added to the `Path` Variable
+- Restart all your terminals
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+You can also run `npm start` or `ng serve -o`.
 
 ## Code scaffolding
 
