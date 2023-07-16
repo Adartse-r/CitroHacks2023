@@ -21,22 +21,22 @@
 }
 .desktop2-rectangle2 {
   top: 5px;
-  left: -35px;
-  width: 1496px;
+  left: 0px;
+  width: 100%;
   height: 755px;
   position: absolute;
 }
 .desktop2-rectangle8 {
-  top: 737px;
-  left: -4px;
-  width: 1448px;
+  top: 650px;
+  left: 0px;
+  width: 100%;
   height: 154px;
   position: absolute;
 }
 .desktop2-rectangle81 {
   top: 0px;
   left: 0px;
-  width: 1440px;
+  width: 100%;
   height: 80px;
   position: absolute;
 }
@@ -47,10 +47,12 @@
   height: 86px;
   position: absolute;
 }
-.desktop2-text {
+.desktop2-text-container {
   top: 326px;
   left: 64px;
   color: rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
   width: 868px;
   height: auto;
   position: absolute;
@@ -79,9 +81,20 @@
   font-stretch: normal;
   text-decoration: none;
 }
+
+.desktop2-text {
+  background: darkseagreen;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 10px;
+}
+.desktop2-text:hover {
+  cursor: pointer;
+}
+
 .desktop2-image21 {
-  top: 473px;
-  left: 602px;
+  top: 200px;
+  left: 978px;
   width: 222px;
   height: 214px;
   position: absolute;

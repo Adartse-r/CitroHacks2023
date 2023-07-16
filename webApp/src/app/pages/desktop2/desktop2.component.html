@@ -20,49 +20,29 @@
       alt="Screenshot2023071501164318124"
       class="desktop2-screenshot202307150116431"
     />
-    <span class="desktop2-text">
-      <span>
-        <span>
-          How often do you use single-use plastic items, such as plastic bags,
-          bottles, or straws?
-          <span [innerHTML]="rawher5"></span>
-        </span>
-        <br />
-        <span><span [innerHTML]="rawttau"></span></span>
-        <br />
-        <span>
-          a) Rarely or never
-          <span [innerHTML]="rawvvko"></span>
-        </span>
-        <br />
-        <span></span>
-        <br />
-        <span>
-          b) Occasionally
-          <span [innerHTML]="raw7vdc"></span>
-        </span>
-        <br />
-        <span><span [innerHTML]="rawkyp5"></span></span>
-        <br />
-        <span>
-          c) Frequently
-          <span [innerHTML]="rawyq0m"></span>
-        </span>
-        <br />
-        <span><span [innerHTML]="rawfhzk"></span></span>
-        <br />
-        <span>d) I&apos;m not sure</span>
-      </span>
-    </span>
-    <span class="desktop2-text19">
-      <span>
+    <div class="desktop2-text-container">
+      <div class="desktop2-text">
+        {{currentQuestion.question}}
+      </div>
+      <div class="desktop2-text" (click)="onClickAnswer('A')">
+        a) {{currentQuestion.a}}
+      </div>
+      <div class="desktop2-text"(click)="onClickAnswer('B')">
+        b) {{currentQuestion.b}}
+      </div>
+      <div class="desktop2-text"(click)="onClickAnswer('C')">
+        c) {{currentQuestion.c}}
+      </div>
+    </div>
+    <div class="desktop2-text19">
+      <div>
         Globally, it is estimated that over 8.3 billion metric tons of plastic
         waste have been produced since the 1950s, and approximately 79% of that
         waste is accumulated in landfills or the natural environment, including
         our oceans. Single-use plastic items, such as straws, bottles, and bags,
         contribute significantly to this waste and environmental pollution
-      </span>
-    </span>
+      </div>
+    </div>
     <img
       src="/assets/external/image211564-ywjr-300h.png"
       alt="image211564"

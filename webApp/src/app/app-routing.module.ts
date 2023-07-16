@@ -6,7 +6,7 @@ import { Desktop2 } from './pages/desktop2/desktop2.component';
 import { Desktop13 } from './pages/desktop13/desktop13.component';
 
 const routes: Routes =  [
-  { path: 'home', component: Desktop1 },
+  { path: '', component: Desktop1 },
   { path: 'quizz', component: Desktop2},
   { path: 'result', component: Desktop13}
 ]
@@ -15,6 +15,7 @@ const routes: Routes =  [
   declarations: [],
   imports: [
       RouterModule.forRoot(routes)
-  ]
+  ],
+  exports: [ RouterModule]
 })
 export class AppRoutingModule { }
