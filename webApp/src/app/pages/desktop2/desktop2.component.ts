@@ -1,5 +1,4 @@
 import { Component } from '@angular/core'
-import { Title } from '@angular/platform-browser'
 import { ActivatedRoute, Router } from '@angular/router';
 import { QuizzModel } from 'src/app/Model/quizz-model'
 import { QuizzService } from 'src/app/Service/quizz-service';
@@ -18,9 +17,9 @@ export class Desktop2 {
   router: Router;
   quizzService: QuizzService;
 
-  constructor(router: Router, quizzService: QuizzService) {
+  constructor(router: Router) {
+    this.quizzService = new QuizzService();
     this.router = router;
-    this.quizzService = quizzService;
     // Question, AnswerA, AnswerB, AnswerC, Value of A, Value of B, Value of C
     this.quizz = [
       new QuizzModel("test", "a", "b", "c", 0, 1, -1),

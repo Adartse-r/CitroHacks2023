@@ -6,9 +6,10 @@ import { Desktop2 } from './pages/desktop2/desktop2.component';
 import { Desktop13 } from './pages/desktop13/desktop13.component';
 
 const routes: Routes =  [
-  { path: '', component: Desktop1 },
+  { path: 'home', component: Desktop1 },
   { path: 'quizz', component: Desktop2},
-  { path: 'result', component: Desktop13}
+  { path: 'result', component: Desktop13},
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
 ]
 
 @NgModule({
@@ -16,6 +17,6 @@ const routes: Routes =  [
   imports: [
       RouterModule.forRoot(routes)
   ],
-  exports: [ RouterModule]
+  exports: [ RouterModule ]
 })
 export class AppRoutingModule { }

@@ -10,7 +10,7 @@ import { QuizzService } from 'src/app/Service/quizz-service';
 export class Desktop13 {
   result: number = 0;
 
-  constructor(quizzService: QuizzService) {
-    this.result = quizzService.getResult();
+  constructor() {
+
   }
 }
