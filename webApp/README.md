@@ -1,4 +1,4 @@
-# WebApp
+# GreenLifeTracker
 
 To Launch the project properly you need:
 
