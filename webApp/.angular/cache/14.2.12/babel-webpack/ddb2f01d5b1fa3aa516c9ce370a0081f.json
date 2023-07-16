@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class QuizzService {\n  setResult(result) {\n    this.result = result;\n  }\n\n  getResult() {\n    return this.result;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}
