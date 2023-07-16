@@ -1,5 +1,6 @@
 import { Component } from '@angular/core'
 import { Title } from '@angular/platform-browser'
+import { ActivatedRoute } from '@angular/router';
 import { QuizzService } from 'src/app/Service/quizz-service';
 
 @Component({
@@ -8,9 +9,9 @@ import { QuizzService } from 'src/app/Service/quizz-service';
   styleUrls: ['desktop13.component.css'],
 })
 export class Desktop13 {
-  result: number = 0;
+  result: string = "0";
 
-  constructor() {
-
+  constructor(route: ActivatedRoute) {
+    this.result = route.snapshot.paramMap.get('result');
   }
 }
