@@ -1,4 +1,4 @@
-# CitroHacks2023
+# GreenLifeTracker | CitroHacks2023
 
 ## Inspiration
 Many people spend lots of water without thinking about it, and a lot goes to waste. We wanted to show how much effect we have on the environment and how we can change our habits.
